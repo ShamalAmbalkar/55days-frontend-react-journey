@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*All boxes in a row */
+.container{
+    display: flex;
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 14px;
+    gap: 20px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    padding: 5px;
+}
+
+/* Box 2 take more space */
+.box:nth-child(2){
+    flex-grow: 2;
+}
+
+/* Box 3 go to the bottom */
+.box:nth-child(3){
+    align-self: flex-end;
+    background-color: aqua;
+}
