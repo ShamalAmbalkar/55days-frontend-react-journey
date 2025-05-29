@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sidebar Layout</title>
+  <style>
+    * {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Sidebar</h2>
+    <p>Menu Item 1</p>
+    <p>Menu Item 2</p>
+    <p>Menu Item 3</p>
+  </div>
+  <div class="content">
+    <h1>Main Content Area</h1>
+    <p>This section flexibly fills the remaining space.</p>
+  </div>
+</body>
+</html>
