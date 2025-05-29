@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Login Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ece9e6, #ffffff);
+        }
+        .login-form{
+            background: white;
+            width: 100%;
+            padding: 40px;
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .login-form:hover{
+            transform: translateY(-5px);
+        }
+        .login-form h2{
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        label{
+            font-weight: 600;
+            margin-top: 20px;
+            display: block;
+        }
+        input[type="email"], input[type="password"]{
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s box-shadow 0.3s;
+        }
+        input[type="email"]:focus,input[type="password"]:focus{
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+            outline: none;
+        }
+            button {
+      width: 100%;
+      margin-top: 25px;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+    </style>
+</head>
+<body>
+    <form class="login-form" action="#" method="post">
+        <h2>Login</h2>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required placeholder="Enter your email">
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter password" required>
+
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
