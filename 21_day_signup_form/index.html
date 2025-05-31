@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="signup-form">
+        <h2>Sign Up</h2>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" required placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" value="email" id="email" required placeholder="Enter your email">
+
+        <label for="password">Password:</label>
+        <input type="password" value="password" id="password" required placeholder="Enter your password">
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" min="1" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="interests">Interests:</label>
+        <textarea id="interests" name="interests" rows="3" placeholder="E.g., Coding, Music, Reading"></textarea>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
