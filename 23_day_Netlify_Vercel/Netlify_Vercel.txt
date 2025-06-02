@@ -1,0 +1,6 @@
+Common Platforms used by frontend developers:
+Netlify: What it does: Auto deploy your GitHub repo, Use Case: Static site
+Vercel: What it does: Optimized for React/Next.js, Use Case: React project
+
+Netlify Link: https://app.netlify.com/projects/stately-hamster-35ba00/overview 
+Vercel Link: https://weather-app-topaz-delta-48.vercel.app/
