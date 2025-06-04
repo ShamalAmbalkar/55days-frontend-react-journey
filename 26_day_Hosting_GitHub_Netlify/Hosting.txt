@@ -1,0 +1,12 @@
+GitHub:
+Create a repo.
+push project.
+settings-> pages
+set source= main branch-> /root or /docs
+wait for GitHub to provide you a link
+
+Netlify:
+Add new site-> Import an existing project.
+connect to repo.
+set build settings if using react(npm run build)
+click deploy
