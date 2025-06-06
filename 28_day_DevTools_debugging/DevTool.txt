@@ -1,0 +1,23 @@
+Why it is IMP:
+to know how to troubleshoot layout issues, performance and behavior.
+
+What to learn in DevTools:
+Element Tab:
+Inspect HTML/CSS
+Modify styles live
+Toggle classes
+
+Console Tab:
+View JS code
+console.log, .warn, .error
+
+Network tab:
+file loading time
+API response status code
+
+Lighthouse Tab:
+Audit: Performance, SEO, Accessibility
+
+Application Tab:
+Inspect cookies
+Check LocalStorage/SessionStorage
