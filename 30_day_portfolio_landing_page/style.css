@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Hero */
+.hero {
+  background: #0077cc;
+  color: #fff;
+  padding: 100px 20px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+.hero .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #0077cc;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* About */
+.about {
+  background: #fff;
+}
+
+/* Skills */
+.skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.skills li {
+  background: #0077cc;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+/* Projects */
+.projects .project {
+  background: #fff;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact input, .contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact button {
+  padding: 10px;
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .skills ul {
+    flex-direction: column;
+  }
+}
