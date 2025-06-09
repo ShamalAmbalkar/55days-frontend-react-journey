@@ -1,0 +1,58 @@
+<!-- 
+ document.getElementById
+ document.getElementsByTagName
+ document.getElementsByClassName
+ document.querySelector
+ document.querySelectorAll
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecting HTML Element</title>
+</head>
+<body>
+    <div id="special">
+        <h1>This is first heading.</h1>
+        <p>This is paragraph.</p>
+    </div>
+
+    <div class="special">
+        <h2>Div 1</h2>
+        <p>and para 1</p>
+    </div>
+    <div class="special">
+        <h2>Div 2</h2>
+        <p>and para 2</p>
+    </div>
+    <div class="special">
+        <h2>Div 3</h2>
+        <p>and para 3</p>
+    </div>
+    <div class="special">
+        <h2>Div 4</h2>
+        <p>and para 4</p>
+    </div>
+
+    <script>
+        let x=document.getElementById("special");
+        console.log(x);
+
+        let y=document.getElementsByClassName("special");
+        console.log(y);
+
+        let u= document.getElementsByTagName("h2");
+        console.log(u);
+
+        let k=document.querySelector("#special");
+        console.log(k);
+        let n=document.querySelectorAll(".special");
+        console.log(n);
+
+        console.log(document.head);
+    </script>
+</body>
+</html>

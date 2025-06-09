@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM /manipulation</title>
+</head>
+<body>
+    <form>
+        <input id="name" placeholder="Enter your name">
+        <button id="btn">Click</button>
+        <p id="para"></p>
+    </form>
+
+    <script>
+        var a=document.getElementById("btn").addEventListener("click", ()=>{
+            var take=document.getElementById("name").value;
+            var para= document.getElementById("para").innerText=`Hii, ${take}`;
+        });
+
+        var ele=document.getElementById("name");
+        ele.classList.add("n");
+        ele.classList.remove("n");
+        ele.classList.toggle("n");
+        ele.classList.contains("n");
+
+        var a=document.getElementById("btn");
+        a.style.color="green";
+        console.log(a.getAttribute("id"));
+
+    </script>
+</body>
+</html>
