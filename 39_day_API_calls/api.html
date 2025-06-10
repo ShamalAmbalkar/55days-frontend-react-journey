@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Fetching</title>
+</head>
+<body>
+    <script>
+        // by using fetch, then & catch
+        fetch('https://dummyjson.com/users')
+        .then(response=>response.json())
+        .then(data=>console.log(data))
+        .catch(error=>console.error(error))
+
+        //async and await
+        async function fetchData() {
+        const res=await fetch('https://dummyjson.com/posts');
+        const da=await response.json();
+        console.log(da);
+       }
+    </script>
+</body>
+</html>
