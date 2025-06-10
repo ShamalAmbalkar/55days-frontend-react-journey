@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation using JavaScript</title>
+    <style>
+        .error{
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <form id="myForm">
+        <label>
+            Name:
+            <input type="text" id="name">
+            <span class="error" id="nameError"></span>
+        </label>
+<br><br>
+        <label>
+            Email:
+            <input type="email" id="email">
+            <span class="error" id="emailError"></span>
+        </label>
+<br><br>
+        <label>
+            Password:
+            <input type="password" id="password">
+            <span class="error" id="passwordError"></span>
+        </label>
+<br><br>
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(e){
+        e.preventDefault();
+
+        //get values
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+
+        //for error message
+        const nameError = document.getElementById("nameError");
+        const emailError = document.getElementById("emailError");
+        const passwordError = document.getElementById("passwordError");
+
+        nameError.textContent = "";
+        emailError.textContent = "";
+        passwordError.textContent = "";
+
+        let valid = true;
+
+        // Validate Name
+        if (name === "") {
+        nameError.textContent = "Name is required.";
+        valid = false;
+        }
+
+        if (email === "") {
+         emailError.textContent = "Email is required.";
+         valid = false;
+        }
+
+        if (password.length < 6) {
+        passwordError.textContent = "Password must be at least 6 characters.";
+        valid = false;
+        }
+
+        if (valid) {
+          alert("Form submitted successfully!");
+        }
+    });
+
+    </script>
+</body>
+</html>
