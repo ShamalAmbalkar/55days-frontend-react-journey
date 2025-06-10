@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & eventListners</title>
+</head>
+<body>
+    <button id="btn">Click me</button>
+    <br>
+    <input type="text" placeholder="Enter your name" id="name">
+
+    <br>
+    <form id="form">
+        <input type="text" placeholder="Enter your name">
+        <input type="number" placeholder="Enter your age">
+        <button type="submit">Submit</button>
+    </form>
+
+    <input type="text" id="keyevent" placeholder="Press key">
+
+    <br>
+
+
+    <script>
+        // addEventListener
+        var button= document.getElementById("btn");
+        button.addEventListener("click",function(e){
+            alert("You clicked button."+ e);
+        });
+        // input
+        var takeit=document.getElementById("name");
+        takeit.addEventListener("input",function(e){
+            alert("You entered "+ e.target.value);
+            console.log(e);
+        });
+
+        // submit
+        var sub=document.getElementById("form");
+        sub.addEventListener("submit",function(){
+            alert("Form submitted succesfully.");
+        });
+
+        // Key event
+        var takingkeyevent=document.getElementById("keyevent");
+        takingkeyevent.addEventListener("keydown",function(e){
+            alert("Key is "+ e.key);
+        });
+
+    </script>
+</body>
+</html>
